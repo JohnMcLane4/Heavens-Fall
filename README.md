@@ -9,7 +9,7 @@ Known Issues/ todo
 - Health/shieldbar not working
 - only asteroid enemies right now
 - no additional lasers purchasable
-- empty button in main menu
+- empty button in main menu: savegame
 - lot of other stuff
 - respawn text/sound
 
