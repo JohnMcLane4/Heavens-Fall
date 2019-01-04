@@ -45,6 +45,7 @@ public class Sound
 public class AudioManager : MonoBehaviour {
 
     public static AudioManager instance;
+    private AudioManager audioManager;
 
     [SerializeField]
     Sound[] sounds;
@@ -52,8 +53,8 @@ public class AudioManager : MonoBehaviour {
     void Awake()
     {
         if (instance != null)
-        {
-            if (instance != this)
+        {       
+            if (instance != this)               //check for multiple audiomanagers
             {
                 Destroy(this.gameObject);
             }
@@ -74,6 +75,12 @@ public class AudioManager : MonoBehaviour {
         }
 
         PlaySound("Music");
+
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("No AudioManager!");
+        }
     }
 
     public void PlaySound(string _name)

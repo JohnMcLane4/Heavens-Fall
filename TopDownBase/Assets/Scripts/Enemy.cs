@@ -72,14 +72,14 @@ public class Enemy : MonoBehaviour {
         }
     }*/
 
-    void OnTriggerEnter(Collider hit)
+    void OnTriggerEnter(Collider other)
     {
-        Player _player = hit.GetComponentInParent<Player>();
+        Player _player = other.GetComponentInParent<Player>();
         if (_player != null)
         {
             _player.DamagePlayer(enemyStats.collisionDamage);
             DamageEnemy(9999999);
             //GameMaster.KillEnemy(this);
-        }
+        }       
     }
 }

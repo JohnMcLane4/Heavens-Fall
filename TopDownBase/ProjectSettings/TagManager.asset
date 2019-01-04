@@ -7,6 +7,7 @@ TagManager:
   - Boundary
   - Enemy
   - GM
+  - Projectile
   layers:
   - Default
   - TransparentFX

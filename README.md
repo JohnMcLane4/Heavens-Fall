@@ -6,6 +6,7 @@ This is my first public game on github, i will develop it further as the time al
 Known Issues/ todo
 - Audiomanager : change scene caused nullReference error 
 - scene change: buttons dont work
+- bullets cause more damage than they should (not getting destroyed on impact)
 - Health/shieldbar not working
 - only asteroid enemies right now
 - no additional lasers purchasable

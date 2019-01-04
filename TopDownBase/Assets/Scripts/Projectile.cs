@@ -36,8 +36,8 @@ public class Projectile : MonoBehaviour {
             enemy.DamageEnemy(damage * PlayerStats.instance.damageMultiplier);
         }
 
-        //Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        Destroy(this.gameObject);
+        //Instantiate(hitEffect, transform.position, Quaternion.identity);     
     }
 
 }

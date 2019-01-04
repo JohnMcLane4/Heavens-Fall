@@ -160,6 +160,7 @@ MonoBehaviour:
     Speed: 10
     collisionDamage: 50
   rb: {fileID: 54935581994672526}
+  moneyFromDeath: 10
 --- !u!136 &136029436227018264
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -167,7 +168,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710652287807474}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 1.622943
   m_Height: 3.735087
