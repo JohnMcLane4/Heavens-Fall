@@ -64,6 +64,8 @@ public class GameMaster : MonoBehaviour {
         yield return new WaitForSeconds(spawnDelay);
 
         Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
+
+        //SpawnEffect
         //Transform clone = (Transform)Instantiate(spawnEffectPrefab, spawnPoint.position, spawnPoint.rotation);
         //Destroy(clone.gameObject, 3f);
     }
